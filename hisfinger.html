@@ -57,63 +57,54 @@
     <h4 class="welcome-text">Welcome To My Portfolio!</h4>
     <span class="welcome-line"></span>
     
-<div class="aboutme-hero row">
-  <div class="one column"></div>
-
-  <div class="six columns aboutme-hero-text">
-    <h2 class="gradient-text">My Story</h2>
-    <p>From Korea to China to Canada, my journey has been shaped by culture, language, and connection.<br> 
-      Art has always been part of who I am. Through graphic design, 
-      I hope to create work that brings light and carries meaning and purpose to others.</p>
-  </div>
-
-  <div class="four columns aboutme-hero-image">
-    <img src="Images/aboutme-hero.jpg" alt="An illustration of Michelle Yoo sitting on the grass with her laptop on her lap, thinking of ideas">
-  </div>
-
+<div class="hisfinger-hero row">
+    <h2 class="gradient-text">His Finger</h2>
+    <p>His Finger is a collection of Bible verses inspired by the Word of God.<br>
+    I created these works to share the message of Jesus with my dear friend, Zhen Zhen, 
+    during her journey with terminal stomach cancer. 
+    The verses are placed over photographs taken by her husband, photographer Huang Jian. 
+    His images reflect the quiet beauty of the horse ranch where he works—sunrise and sunset, 
+    and the passing of the seasons.</p> </div>
   <div class="one column"></div></div>
   </header>
 
-<section class="aboutme-cards-section">
+<!-- Hisfinger Section -->
+<section class="hisfinger-section">
   <div class="container">
+    <div class="row">
+    <div class="one column"></div>
+    <div class="eleven columns">
+      <div class="hisfinger-slideshow-card">
+      <div class="slideshow-containder">
+      <div class="mySlides fade"><div class="numbertext">1 / 7</div>
+        <img src="Images/hisfinger/Zhen-01.jpg" alt="His Finger work 1"></div>
+      <div class="mySlides fade"><div class="numbertext">2 / 7</div>
+        <img src="Images/hisfinger/Zhen-02.jpg" alt="His Finger work 2"></div>
+      <div class="mySlides fade"><div class="numbertext">3 / 7</div>
+        <img src="Images/hisfinger/Zhen-03.jpg" alt="His Finger work 3"></div>
+      <div class="mySlides fade"><div class="numbertext">4 / 7</div>
+        <img src="Images/hisfinger/Zhen-04.jpg" alt="His Finger work 4"></div>
+      <div class="mySlides fade"><div class="numbertext">5 / 7</div>
+        <img src="Images/hisfinger/Zhen-05.jpg" alt="His Finger work 5"></div>
+      <div class="mySlides fade"><div class="numbertext">6 / 7</div>
+        <img src="Images/hisfinger/Zhen-06.jpg" alt="His Finger work 6"></div>
+      <div class="mySlides fade"><div class="numbertext">7 / 7</div>
+        <img src="Images/hisfinger/Zhen-07.jpg" alt="His Finger work 7"></div>
 
-    <!-- Row 1 -->
-    <div class="row cards-row">
-      <div class="six columns">
-        <div class="aboutme-card card-01"> <div class="aboutme-card-inner">
-          <div class="aboutme-card-text">
-            <h3>Education</h3>
-            <p><strong>Graphic Design</strong><br>Centennial College, Toronto, Canada<br><br>
-            Additional Studies&nbsp;——<br>
-              Library Technician, International Education, and Christian Education</p>
-            </div></div> </div> </div>
-      <div class="six columns">
-        <div class="aboutme-card card-02"> <div class="aboutme-card-inner">
-          <div class="aboutme-card-text">
-            <h3>Experience</h3>
-            <p><strong>Poster Design Volunteer</strong> — Toronto<br><br>Public Service Assistant — Toronto Public Library, Canada<br>
-              Admissions Officer — Hope International School, China<br>Middle School Teacher — Seoul, South Korea</p>
-            </div></div> </div> </div> </div>
+      <button class="prev" onclick="plusSlides(-1)" aria-label="Previous slide">❮</button>
+      <button class="next" onclick="plusSlides(1)" aria-label="Next slide">❯</button>
+      </div>
 
-    <!-- Row 2 -->
-    <div class="row cards-row">
-      <div class="six columns">
-        <div class="aboutme-card card-03"> <div class="aboutme-card-inner">
-            <div class="aboutme-card-text">
-              <h3>Capabilities</h3>
-              <p><strong>Design</strong><br>Publication, Illustration, Poster, Product design, <br>Web (Mobile & Web)<br><br>
-                <strong>Tools</strong><br>Photoshop, Illustrator, InDesign, Figma, VS Code</p>
-            </div></div> </div> </div>
-      <div class="six columns">
-        <div class="aboutme-card card-04"> <div class="aboutme-card-inner">
-            <div class="aboutme-card-text">
-              <h3>Personality</h3>
-              <p>I have a warm heart and find the greatest joy in helping others. 
-                I love books, music, art, and nature, which continually inspire my creativity.<br>
-                I am grateful each day for good health, for the abundance in my life, 
-                and for the joy of bringing happiness to others through my designs.</p>
-            </div></div> </div> </div> </div> </div>
-</section>
+      <div class="hisfinger-dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span></div>
+      </div></div></div></div>
+    </section>          
 
 
 <footer class="site-footer">
@@ -134,7 +125,7 @@
        <i class="fab fa-instagram"></i></a></div>
 
     <div class="three columns footer-button-wrap">
-      <a href="#" class="btn-secondary">Back to Top</a> </div>
+      <a href="#top" class="btn-secondary">Back to Top</a> </div>
 
     <div class="two columns footer-logo">
       <img src="Images/Logo_Hisfinger.png" alt="Hisfinger logo"> </div>
@@ -143,11 +134,27 @@
 </footer>
 </main>
 
-  <script>
+<script>
     function myFunction() {
       var x = document.getElementById("mobileNav");
       if (x.style.display === "block") {x.style.display = "none"; } 
       else { x.style.display = "block"; } }
+
+ let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) { showSlides(slideIndex += n); }
+    function currentSlide(n) { showSlides(slideIndex = n); }
+    function showSlides(n) { let i;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = slides.length; }
+      for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", ""); }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active"; }
+
   </script>
 </body>  
 </html>
