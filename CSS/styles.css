@@ -239,9 +239,9 @@ body { display: flex; background-color: var(--primary-ivory-50); }
 .success-modal-box p { margin-bottom: 3rem; }
 
 .success-modal-box .btn-primary {
-  display: flex; align-items: center; justify-content: center; margin: 0 auto; min-width: 180px;
-  padding: var(--spacing-s) var(--spacing-l); line-height: 1; text-align: center; }
-
+  display: flex; align-items: center; justify-content: center; margin: 0 auto; 
+  min-width: 180px; height: 52px;
+  padding: 0 2rem; line-height: 1; text-align: center; }
 
 /* ===== 10. HIS FINGER PAGE ===== */
 
