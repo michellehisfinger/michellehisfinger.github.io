@@ -137,16 +137,7 @@ body { display: flex; background-color: var(--primary-ivory-50); }
 /* ===== 7. PORTFOLIO PAGE ===== */
 
 .portfolio-hero { margin: 7rem 0 2rem 4rem; }
-.portfolio-hero p { font-size: 1.6rem; line-height: var(--spacing-m); 
-
-white-space: normal;
-  width: auto;
-  max-width: 100%;
-  min-width: 0;
-  box-sizing: border-box;
-  overflow-wrap: break-word;
-  line-height: 1.5; }
-
+.portfolio-hero p { font-size: 1.6rem; line-height: var(--spacing-m); }
 
 .portfolio-section { padding: 1rem 0rem; }
 
@@ -521,7 +512,7 @@ img { display: block; max-width: 100%; }
 /* ===== 8. MOBILE - PORTFOLIO  ===== */
 .portfolio-hero { margin: 1rem 0 2rem 1rem; } 
 .portfolio-hero h2 { margin-bottom: 1rem; }
-.portfolio-hero p { margin: 0; white-space: nowrap; }
+.portfolio-hero p { margin: 0; white-space: normal; }
 
 .portfolio-section { padding: 1rem 0 ; }
 
