@@ -134,6 +134,9 @@ body { display: flex; background-color: var(--primary-ivory-50); }
 
 .footer-logo img { width: clamp(100px, 10vw, 140px); height: auto; margin-top: -10px; }
 
+.footer-logo video { width: clamp(100px, 10vw, 140px); height: auto; margin-top: -10px; }
+
+
 /* ===== 7. PORTFOLIO PAGE ===== */
 
 .portfolio-hero { margin: 7rem 0 2rem 4rem; }
@@ -510,11 +513,11 @@ img { display: block; max-width: 100%; }
 
 
 /* ===== 8. MOBILE - PORTFOLIO  ===== */
-.portfolio-hero { margin: 1rem 3rem 2rem 1rem; } 
+.portfolio-hero { margin: 1rem 0 2rem 1rem; } 
 .portfolio-hero .one.column { display: none; }
 .portfolio-hero .hero-text { width: 100%; margin-left: 0; 
   padding-right: 0; box-sizing: border-box; }
-.portfolio-hero h2 { margin-bottom: 1rem; }
+.portfolio-hero h2 { margin-bottom: 1rem; margin-right: 1rem; }
 .portfolio-hero p { margin: 0; white-space: normal; }
 
 .portfolio-section { padding: 1rem 0 ; }
