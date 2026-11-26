@@ -375,7 +375,10 @@ body { display: flex; background-color: var(--primary-ivory-50); }
 .hisvision-text h4 { margin-bottom: 1rem; color: var(--primary-navy-950); font-weight: 600;}
 .hisvision-text p { margin: 0; line-height: 1.7; }
 
-
+/* Keep the left sidebar visible while scrolling on desktop */
+@media (min-width: 600px) {
+  .sidebar { position: sticky; top: 0; align-self: flex-start;
+    height: 100vh; box-sizing: border-box; overflow-y: auto; } }
 
 /* =====================================================================================
    MOBILE (375px – 599px)
