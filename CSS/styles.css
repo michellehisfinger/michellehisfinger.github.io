@@ -142,11 +142,16 @@ body { display: flex; background-color: var(--primary-ivory-50); }
   max-width: min(100%, 110px); max-height: 80px; margin: 0; transform: none; }
 
 @media (min-width: 600px) {
+  .site-footer .footer-logo {
+    flex: 0 1 330px;
+    min-width: 0;
+  }
+
   .site-footer .footer-logo video {
-    width: 165px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 330px;
     height: auto;
-    max-height: 120px;
+    max-height: 240px;
     object-fit: contain;
     transform: none;
   }
