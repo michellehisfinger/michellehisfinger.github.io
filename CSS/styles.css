@@ -134,15 +134,23 @@ body { display: flex; background-color: var(--primary-ivory-50); }
 
 .footer-logo img { width: clamp(100px, 10vw, 140px); height: auto; margin-top: -10px; }
 
-.footer-logo video { display: block;
+/* Footer motion logo */
+.site-footer .footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+.site-footer .footer-logo video {
+  display: block;
   width: auto;
   height: auto;
   max-width: min(100%, 110px);
   max-height: 80px;
   margin: 0;
-  transform: none; }
-
-
+  transform: none;
+}
 /* ===== 7. PORTFOLIO PAGE ===== */
 
 .portfolio-hero { margin: 7rem 0 2rem 4rem; }
