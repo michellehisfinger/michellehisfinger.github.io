@@ -135,21 +135,21 @@ body { display: flex; background-color: var(--primary-ivory-50); }
 .footer-logo img { width: clamp(100px, 10vw, 140px); height: auto; margin-top: -10px; }
 
 /* Footer motion logo */
-.site-footer .footer-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 0;
-}
+.site-footer .footer-logo { display: flex; justify-content: center; align-items: center;
+  min-width: 0; }
 
-.site-footer .footer-logo video {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: min(100%, 110px);
-  max-height: 80px;
-  margin: 0;
-  transform: none;
+.site-footer .footer-logo video { display: block; width: auto; height: auto;
+  max-width: min(100%, 110px); max-height: 80px; margin: 0; transform: none; }
+
+@media (min-width: 600px) {
+  .site-footer .footer-logo video {
+    width: 165px;
+    max-width: 100%;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
+    transform: none;
+  }
 }
 /* ===== 7. PORTFOLIO PAGE ===== */
 
