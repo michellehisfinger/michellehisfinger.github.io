@@ -460,7 +460,7 @@ img { display: block; max-width: 100%; }
  /* Align the animated logo with the Portfolio logo */
   .mobile-header .mobile-header-logo {
     display: flex; align-items: center; justify-content: center;
-    width: 150px; height: 140px; margin-left: 1rem; }
+    width: 200px; height: 140px; margin-left: 1rem; }
 
   /* Fill the logo area while preserving the feather’s proportions */
   .mobile-header .mobile-header-logo video {
