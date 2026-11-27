@@ -451,6 +451,9 @@ img { display: block; max-width: 100%; }
 .mobile-logo { margin-left: 1rem; }
 .mobile-logo img { width: 150px; height: auto; }
 
+.mobile-header .mobile-header-logo { display: inline-flex; align-items: center; }
+.mobile-header .mobile-header-logo video { display: block; height: 56px; width: auto; }
+
 .menu-toggle {
   background: none; border: none; color: var(--primary-purple-900); font-size: 4rem; 
   cursor: pointer; padding: 1rem; margin-top: 0rem; transition: color 0.3s ease;}
